@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Axes</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Select Axes</h1>
+        <p>Choose the axes and graph type for your visualization.</p>
+    </header>
+    <main>
+        <form action="{% url 'generate_graph' %}" method="POST">
+            {% csrf_token %}
+            <label for="graph-type">Select Graph Type:</label>
+            <select id="graph-type" name="graph-type" required>
+                <option value="line">Line Plot</option>
+                <option value="bar">Bar Chart</option>
+                <option value="scatter">Scatter Plot</option>
+                <option value="pie">Pie Chart</option>
+                <option value="box">Box Plot</option>
+                <option value="violin">Violin Plot</option>
+                <option value="heatmap">Heatmap</option>
+                <option value="area">Area Plot</option>
+                <option value="polar">Polar Plot</option>
+                <option value="3d_scatter">3D Scatter Plot</option>
+                <option value="3d_surface">3D Surface Plot</option>
+                <option value="density">Density Plot</option>
+                <option value="histogram">Histogram</option>
+                <option value="treemap">Treemap</option>
+                <option value="sunburst">Sunburst Chart</option>
+            </select>
+
+            <label for="x-axis">Select X-Axis:</label>
+            <select id="x-axis" name="x-axis" required>
+                {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="y-axis">Select Y-Axis:</label>
+            <select id="y-axis" name="y-axis" required>
+                {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="z-axis">Select Z-Axis (for 3D diagrams):</label>
+            <select id="z-axis" name="z-axis">
+                <option value="">None</option>
+                {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Generate Graph</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Diagram Automation Module. All rights reserved.</p>
+    </footer>
+</body>
+</html>

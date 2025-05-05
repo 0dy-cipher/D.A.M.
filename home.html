@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Generator</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>D.A.M.</h1>
+        <p>Upload a CSV file to start generating visualizations.</p>
+    </header>
+    <main>
+        <form action="{% url 'upload_file' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="file-input">Upload CSV File:</label>
+            <input type="file" id="file-input" name="file-input" accept=".csv" required>
+        
+            <button type="submit">Upload File</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Diagram Automation Module. All rights reserved.</p>
+    </footer>
+</body>
+</html>
