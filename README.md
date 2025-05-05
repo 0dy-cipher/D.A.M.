@@ -4,28 +4,28 @@
 
 
 2. Περιγραφή και τεκμηρίωση λειτουργιών
-    ● Περιγραφή: Λαμβάνει το αρχείο CSV και το ανεβάζει στην εφαρμογή για ανάλυση.
-    ● Είσοδος χρήστη: A Strictly organised CSV File.
-    ● Έξοδος: Redicted to the Axis Selection page.
-    ● Οθόνη (Mock-up): home.html
+    ● Περιγραφή: Λαμβάνει το αρχείο CSV και το ανεβάζει στην εφαρμογή για ανάλυση.<br>
+    ● Είσοδος χρήστη: A Strictly organised CSV File.<br>
+    ● Έξοδος: Redicted to the Axis Selection page.<br>
+    ● Οθόνη (Mock-up): home.html<br>
 
 
-    ● Περιγραφή: Μετά την ανάλυση των περιεχομένων του αρχείου, εναπόκειται στον χρήστη να επιλέξει τον τύπο του διαγράμματος καθώς και ποια δεδομένα θα εξυπηρετούν σε ποιον άξονα.
-    ● Είσοδος χρήστη: Diagram and Axis selection. /n
-    ● Έξοδος: Redicted to the Result page.
-    ● Οθόνη (Mock-up): select_axis.html
+    ● Περιγραφή: Μετά την ανάλυση των περιεχομένων του αρχείου, εναπόκειται στον χρήστη να επιλέξει τον τύπο του διαγράμματος καθώς και ποια δεδομένα θα εξυπηρετούν σε ποιον άξονα.<br>
+    ● Είσοδος χρήστη: Diagram and Axis selection.<br> 
+    ● Έξοδος: Redicted to the Result page.<br>
+    ● Οθόνη (Mock-up): select_axis.html<br>
 
 
-    ● Περιγραφή: Εμφανίζει το διάγραμμα της επιλογής των χρηστών με βάση τα δεδομένα εντός του CSV.
-    ● Είσοδος χρήστη: N/A
-    ● Έξοδος: Image of the diagram.
-    ● Οθόνη (Mock-up): result.html
+    ● Περιγραφή: Εμφανίζει το διάγραμμα της επιλογής των χρηστών με βάση τα δεδομένα εντός του CSV.<br>
+    ● Είσοδος χρήστη: N/A<br>
+    ● Έξοδος: Image of the diagram.<br>
+    ● Οθόνη (Mock-up): result.html<br>
 
 
 3. Mock-up οθόνες
-    home.html
-    result.html
-    select_axis.html
+    home.html<br>
+    result.html<br>
+    select_axis.html<br>
 
 
 4. Σχήμα βάσης δεδομένων
