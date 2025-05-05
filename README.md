@@ -11,7 +11,7 @@
 
 
     ● Περιγραφή: Μετά την ανάλυση των περιεχομένων του αρχείου, εναπόκειται στον χρήστη να επιλέξει τον τύπο του διαγράμματος καθώς και ποια δεδομένα θα εξυπηρετούν σε ποιον άξονα.
-    ● Είσοδος χρήστη: Diagram and Axis selection.
+    ● Είσοδος χρήστη: Diagram and Axis selection. /n
     ● Έξοδος: Redicted to the Result page.
     ● Οθόνη (Mock-up): select_axis.html
 
@@ -29,4 +29,4 @@
 
 
 4. Σχήμα βάσης δεδομένων
-![databse_schema](image.png)
+![databse_schema]([image.png](https://github.com/0dy-cipher/D.A.M./blob/main/Screenshot%202025-05-05%20153956.png))
